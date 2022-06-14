@@ -10,57 +10,46 @@
 //  public function show() {}
 //  public function print() {}
 //}
-class Product{
-    private $_name;
-    private $_value;
-
-    /**
-     * @return mixed
-     */
-    public function getName()
+class Product
+{
+    public function get($name)
     {
-        return $this->_name;
+        //
     }
 
-    /**
-     * @return mixed
-     */
-    public function getValue()
+    public function set($name, $value)
     {
-        return $this->_value;
+        //
     }
+}
 
-    /**
-     * @param mixed $name
-     */
-    public function setName($name)
+class TreatmentProduct
+{
+    public function save(Product $product)
     {
-        $this->_name = $name;
+        //
     }
 
-    /**
-     * @param mixed $value
-     */
-    public function setValue($value)
+    public function update(Product $product)
     {
-        $this->_value = $value;
+        //
     }
-    public function  save(Product $product)
+
+    public function delete(Product $product)
     {
-        //TODO: Implemetnt save() method.
+        //
+    }
+}
 
-    }
-    public function update(Product $product) {
-        //TODO: Implemetnt update() method.
-    }
-    public function delete(Product $product) {
-        //TODO: Implemetnt delete() method.
-    }
-    public function show(Product $product) {
-        //TODO: Implemetnt show() method.
-    }
-    public function print(Product $product) {
-        //TODO: Implemetnt print() method.
+class ViewProduct
+{
+    public function show(Product $product)
+    {
+        //
     }
 
+    public function print(Product $product)
+    {
+        //
+    }
 }
